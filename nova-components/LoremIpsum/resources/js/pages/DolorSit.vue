@@ -1,6 +1,8 @@
 <template>
-    <h1 class="font-normal text-xl">Dolor Sit</h1>
-    <div>{{ text }}</div>
+    <div>
+        <h1 class="font-normal text-xl mb-4">Dolor Sit</h1>
+        <p>{{ text }}</p>
+    </div>
 </template>
 
 <script setup>

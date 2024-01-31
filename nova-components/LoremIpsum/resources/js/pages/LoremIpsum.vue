@@ -1,6 +1,8 @@
 <template>
-    <h1 class="font-normal text-xl">Lorem Ipsum</h1>
-    <div>{{ text }}</div>
+    <div>
+        <h1 class="font-normal text-xl mb-4">Lorem Ipsum</h1>
+        <p>{{ text }}</p>
+    </div>
 </template>
 
 <script setup>

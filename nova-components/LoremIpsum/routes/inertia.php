@@ -16,12 +16,12 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 
 Route::get('/', function (\Faker\Generator $faker, NovaRequest $request) {
     return inertia('LoremIpsum', [
-        'text' => $faker->paragraph(50),
+        'text' => $faker->paragraph(20),
     ]);
 });
 
 Route::get('/dolor-sit', function (\Faker\Generator $faker, NovaRequest $request) {
     return inertia('DolorSit', [
-        'text' => $faker->paragraph(100),
+        'text' => $faker->paragraph(20),
     ]);
 });
