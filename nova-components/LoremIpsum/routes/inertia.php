@@ -19,3 +19,9 @@ Route::get('/', function (\Faker\Generator $faker, NovaRequest $request) {
         'text' => $faker->paragraph(50),
     ]);
 });
+
+Route::get('/dolor-sit', function (\Faker\Generator $faker, NovaRequest $request) {
+    return inertia('DolorSit', [
+        'text' => $faker->paragraph(100),
+    ]);
+});
