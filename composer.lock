@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7943fb4dfa2b63d8a50c0364a405d98c",
+    "content-hash": "e1124f3993d8ded06197817fad8531dc",
     "packages": [
         {
             "name": "brick/math",
@@ -2554,6 +2554,42 @@
                 }
             ],
             "time": "2024-01-28T23:22:08+00:00"
+        },
+        {
+            "name": "lucas/lorem-ipsum",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/LoremIpsum",
+                "reference": "6d038fc2f4572be3e34197a72f1caa63b3d62e3d"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lucas\\LoremIpsum\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lucas\\LoremIpsum\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tool.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "monolog/monolog",
@@ -9168,7 +9204,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "lucas/lorem-ipsum": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

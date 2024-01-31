@@ -3,7 +3,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build-lorem-ipsum": "cd nova-components/LoremIpsum && npm run dev",
+        "build-lorem-ipsum-prod": "cd nova-components/LoremIpsum && npm run prod"
     },
     "devDependencies": {
         "axios": "^1.6.4",
